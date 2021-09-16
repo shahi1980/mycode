@@ -37,9 +37,6 @@
                           config will be rolled back by our rescue
                         state: present
 
-                    - name: trigger a failure (to prompt rescue)
-                      shell: "/bin/false"
-
             # this is where our roll back code is stored
             # this code will only run if the code within the block encounters a failure
             rescue:
